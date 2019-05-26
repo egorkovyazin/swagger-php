@@ -270,6 +270,16 @@ class Schema extends AbstractAnnotation
     public $allOf = UNDEFINED;
 
     /**
+     * @var Schema[]
+     */
+    public $oneOf;
+
+    /**
+     * @var Schema[]
+     */
+    public $anyOf;
+
+    /**
      * An instance validates successfully against this property if it validates successfully against at least one schema defined by this property's value.
      *
      * @var Schema[]
